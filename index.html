@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+<body class="bg-black">
+
+    <div class="loading position-fixed w-100 h-100 ">
+		<i class="fa fa-spinner fa-spin spin fa-5x text-white "></i>
+	</div>
+
+
+    <nav>
+        <div id="nav" class="vh-100 position-fixed bg-black  position-relative ">
+            <div class="nav-list pt-2 d-flex flex-column justify-content-between h-100 ">
+                <ul class="list-unstyled p-4">
+                    <li class="mb-4 item1"><a href="#" data-link="search" class=" text-decoration-none text-white fs-5 ">Search</a></li>
+                    <li class="mb-4 item2"><a href="#" data-link="categories" class="text-decoration-none text-white fs-5 ">Categories</a></li>
+                    <li class="mb-4 item3"><a href="#" data-link="area" class="text-decoration-none text-white fs-5 ">Area</a></li>
+                    <li class="mb-4 item4"><a href="#" data-link="ingredient" class=" text-decoration-none text-white fs-5 ">Ingredients</a></li>
+                    <li class="mb-4 item5"><a href="#" data-link="contact" class=" text-decoration-none text-white fs-5 ">Contact Us</a></li>
+                </ul>  
+                <div class="mb-5 "> 
+                    <div class="icons mb-4">
+                        <a class="text-decoration-none text-dark" href=""><i class="fa-brands fa fa-facebook-f fs-6 mx-3"></i></a>
+                        <a class="text-decoration-none text-dark" href=""><i class="fa-brands fa fa-twitter fs-6 mx-3"></i></a>
+                        <a class="text-decoration-none text-dark" href=""><i class="fa-solid fa-globe fs-6 mx-3"></i></a>
+                    </div>
+                    <span class="text-muted">Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logo vh-100 position-fixed bg-light ">
+            <div class="d-flex justify-content-between align-items-center flex-column w-100 h-100">
+                <div class="img"><img src="images/logo (1).png" class="w-100 p-2" alt=""></div>
+                <div class="x-mark"><i id="xmark" class="fa-solid fa-bars fs-4"></i></div>
+                <div class="d-flex justify-content-between align-items-center flex-column mb-3">
+                    <a class="text-decoration-none text-black" href=""><i class="fa-solid fa-globe fs-6 mb-3"></i></a>
+                    <a class="text-decoration-none text-black"  href=""><i class="fa-solid fa-share-nodes fs-6 "></i></a>
+                </div>
+            </div>
+           
+        </div>
+    </nav>
+
+    <div id="Data">
+        <div class="container  py-5">
+            <div class="row px-5" id="searchData">
+
+            </div>
+
+        </div>
+        <div class="container px-5">
+            <div class="row px-5" id="rowData">
+
+            </div>
+
+        </div>
+      
+
+        <!-- <section class="py-5">
+            <div id="search" class="container w-50 m-auto ">
+                <div class="row">
+                    <div class="col-md-6"><input id="searchInput" class="form-control mb-2 bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none" placeholder="Search By Name...">
+                    </div>
+                    <div class="col-md-6">
+                        <input  class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none" type="text" maxlength="1" id="letter" placeholder="Search By First Letter...">
+                    </div>
+                </div>
+            </div>
+            <section class="container text-center  ">
+                <div class="row" id="res"></div>
+            </section>
+        </section> -->
+      
+         <!-- <div class="meal">
+            <div class="container w-50">
+                <div class="row">
+                    <div class="col-md-4 text-white">
+                        <img class="w-100 mb-2" src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" alt="">
+                        <h1 class="text-center">Corba</h1>
+                    </div>
+                    <div class="col-md-8 text-white text-left">
+                        <h2>Instructions</h2>
+                        <p>Pick through your lentils for any foreign debris, rinse them 2 or 3 times, drain, and set aside.  Fair warning, this will probably turn your lentils into a solid block that you’ll have to break up later
+                            In a large pot over medium-high heat, sauté the olive oil and the onion with a pinch of salt for about 3 minutes, then add the carrots and cook for another 3 minutes.
+                            Add the tomato paste and stir it around for around 1 minute. Now add the cumin, paprika, mint, thyme, black pepper, and red pepper as quickly as you can and stir for 10 seconds to bloom the spices. Congratulate yourself on how amazing your house now smells.
+                            Immediately add the lentils, water, broth, and salt. Bring the soup to a (gentle) boil.
+                            After it has come to a boil, reduce heat to medium-low, cover the pot halfway, and cook for 15-20 minutes or until the lentils have fallen apart and the carrots are completely cooked.
+                            After the soup has cooked and the lentils are tender, blend the soup either in a blender or simply use a hand blender to reach the consistency you desire. Taste for seasoning and add more salt if necessary.
+                            Serve with crushed-up crackers, torn up bread, or something else to add some extra thickness.  You could also use a traditional thickener (like cornstarch or flour), but I prefer to add crackers for some texture and saltiness.  Makes great leftovers, stays good in the fridge for about a week.</p>
+                        <p><b class="fw-bolder">Area :</b>  Turkish</p>
+                        <p><b class="fw-bolder">Category :</b> Side</p>
+                        <h3>Recipes :</h3>
+                        <ul class="d-flex list-unstyled flex-wrap" id="recipes">
+                            <li class="my-3 mx-1 p-1 alert alert-success rounded">1 cup</li>
+                        </ul>
+    
+                        <h3 class="my-2 mx-1 p-1">Tags :</h3>
+                        <ul class="d-flex list-unstyled" id="tags">
+                            <li class="my-3 mx-1 p-1 alert alert-danger rounded">soup</li>
+                        </ul>
+    
+                        
+                        <a class="btn btn-success text-white" target="_blank" href="">Source</a>
+                        <a class="btn btn-danger youtube text-white" target="_blank" href="">Youtub</a>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+    
+        <!-- <div class="meals">
+            <div class="container w-50">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 my-3  shadow">
+                        <div class="image overflow-hidden shadow rounded position-relative">
+                            <img src='https://www.themealdb.com/images/media/meals/58oia61564916529.jpg' class="w-100 rounded" />
+                            <div class="layer d-flex align-items-center justify-content-center">
+                                <div class="info p-2 ">
+                                    <h2>Corba</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="category">
+            <div class="container w-50">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 my-3 shadow">
+                        <div class="image overflow-hidden shadow rounded position-relative">
+                            <div>
+                                <img src='https://www.themealdb.com/images/media/meals/58oia61564916529.jpg' class="w-100 rounded" />
+                                <div class="layer d-flex align-items-center ">
+                                    <div class="info p-2 text-center">
+                                        <h4>Beef</h4>
+                                        <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="area">
+            <div class="container w-50">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 my-3 shadow">
+                        <div class="image shadow rounded position-relative">
+                            <div class="text-center">
+                                <i class="fa-solid fa-city text-danger fa-3x mb-2"></i>
+                                <h3 class="text-white fw-light"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="ingrediant">
+          <div class="container w-50">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 my-3  shadow">
+                    <div class="image shadow rounded position-relative">
+                        <div class="text-center ">
+                            <i class="fa-solid fa-bowl-food fa-3x text-success mb-2"></i>
+                            <h3 class="text-white fw-light">${arr[i].strIngredient}</h3>
+                            <p class="text-white"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div> -->
+    
+        <!-- <section class="contact py-5">
+            <div class="container w-50 text-center ">
+                <h3 class="text-center text-white mb-5">Contact Us...</h3>
+                <div class="row mb-3">
+                    <div class="col-md-6 mb-3">
+                        <div class="form">
+                        <input class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none mb-1" type="text" id="userName"  placeholder="Enter Your Name">
+                            <div class="alert alert-danger bg-opacity-75 rounded-0 text-opacity-25" id="alretName">
+                                <p class="mb-0">Special Characters and Numbers not allowed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form">
+                        <input class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none mb-1" type="email" id="userEmail" placeholder="Enter Email">
+                        <div class="alert alert-danger bg-opacity-75 rounded-0 text-opacity-50" id="alertEmail">
+                            <p class="mb-0">Enter valid email. *Ex: xxx@yyy.zzz</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form">
+                        <input class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none mb-1 " type="tel" id="userPhone" placeholder="Enter Phone">
+                        <div class="alert alert-danger bg-opacity-75 rounded-0 text-opacity-50 " id="alertPhone">
+                            <p class="mb-0">Enter valid Phone Number</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form">
+                        <input class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none mb-1" type="number" id="userAge" placeholder="Enter Age">
+                        <div class="alert alert-danger bg-opacity-75 rounded-0 text-opacity-50 " id="alertAge">
+                            <p class="mb-0">Enter valid Age</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form">
+                        <input class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none mb-1" type="password" id="Userpasword" placeholder="Enter Password">
+                        <div class="alert alert-danger bg-opacity-75 rounded-0 text-opacity-50" id="alertPassword">
+                            <p class="mb-0">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                        </div>
+                        </div>
+                    </div>
+                   
+                
+                    <div class="col-md-6 mb-3">
+                        <div class="form">
+                        <input class="form-control bg-black text-muted border-end-0 border-start-0 border-top-0 rounded-0 text-center shadow-none mb-1" type="password" id="userRepassword" placeholder="Enter Repassword">
+                        <div class="alert alert-danger bg-opacity-75 rounded-0 text-opacity-50" id="alertRepassword">
+                            <p class="mb-0">Enter valid Repassword</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger " disabled id="submit" >Submit</button>
+            </div>
+        </section> -->
+    
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

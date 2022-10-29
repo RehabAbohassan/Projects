@@ -1,0 +1,61 @@
+body,html{
+    font-size: 12px;
+}
+#nav{
+    left: -180px;
+    width: 180px;
+    z-index: 9999;
+    transition: all 1s;
+}
+nav .logo{
+    left: 0px;
+    width: 50px;
+    z-index: 9999;
+    transition: all 1s;
+}
+nav li{
+    padding-top: 50px;
+	opacity: 0;
+    transition: all 1s;
+}
+.logo .x-mark{
+    cursor: pointer;
+    transition: all 1s;
+}
+.form-group input{
+    box-shadow:0 .5rem .5rem  .5rem rgba(255,255,255,.1)!important
+}
+/* .form .alert{
+    display: none;
+} */
+.layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255,255,255,.7);
+    transition: all 1s;
+    color: #000;
+}
+.image:hover{
+    cursor: pointer;
+}
+.image:hover .layer
+{
+	top: 0;
+	transition: all 1s;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.327);
+}
+.loading{
+    position: relative;
+    z-index: 999999;
+    /* display: none !important; */
+}
+.loading .spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
